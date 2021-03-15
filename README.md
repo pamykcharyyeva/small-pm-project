@@ -1,25 +1,18 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple Project Management tool 
+Projects CRUD 
+Tasks CRUD 
+Tasks are nested within Project
 
-Things you may want to cover:
 
-* Ruby version
+Gems that were used:
 
-* System dependencies
+* gem 'devise' - for authenticasion 
+* gem 'nested_scaffold' - to create nested and make our life easier
 
-* Configuration
+Other :
+* Bootstrap CDN - for css and design
+* also some costume CSS as well
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# small-pm-project
