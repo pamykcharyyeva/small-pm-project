@@ -13,6 +13,8 @@ Gems that were used:
 Other :
 * Bootstrap CDN - for css and design
 * also some costume CSS as well
+* Javascript library sortablejs- for sorting and drag and drop
+* fontawesome for grid and small icons
 
 
 

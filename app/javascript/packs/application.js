@@ -8,6 +8,9 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
+
+import Sortable from 'sortablejs';
+
 import "../stylesheets/application.scss"
 
 
@@ -17,3 +20,9 @@ import "../stylesheets/application.scss"
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+document.addEventListener('turbolinks:load', () => {
+    // check to make sure libray is loaded
+    // console.log("Sortable:", Sortable);
+    var el = document.getElementById('tasks-list');
+    var sortable = Sortable.create(el, { animation: 150 });
+})
