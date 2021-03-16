@@ -89,6 +89,7 @@ GEM
     ffi (1.15.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    hiredis (0.6.3)
     i18n (1.8.9)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
@@ -242,6 +243,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   devise
+  hiredis
   jbuilder (~> 2.7)
   listen (~> 3.2)
   nested_scaffold
@@ -250,6 +252,7 @@ DEPENDENCIES
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.5)
   rails_12factor
+  redis (>= 4.0)
   sass-rails (>= 6)
   selenium-webdriver
   spring

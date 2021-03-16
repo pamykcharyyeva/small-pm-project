@@ -82,5 +82,5 @@ production:
   <<: *default
   database: small_pm_production
 
-  # username: small_pm
-  # password: <%= ENV['SMALL_PM_DATABASE_PASSWORD'] %>
+  username: small_pm
+  password: <%= ENV['SMALL_PM_DATABASE_PASSWORD'] %>
