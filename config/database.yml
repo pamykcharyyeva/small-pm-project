@@ -80,7 +80,7 @@ test:
 #
 production:
   <<: *default
-  # database: small_pm_production
-  database: <%= ENV['DATABASE_URL'] %>
-  # username: small_pm
-  # password: <%= ENV['SMALL_PM_DATABASE_PASSWORD'] %>
+  database: small_pm_production
+
+  username: small_pm
+  password: <%= ENV['SMALL_PM_DATABASE_PASSWORD'] %>

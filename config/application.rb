@@ -1,5 +1,5 @@
 require_relative 'boot'
-require 'syslog/logger'
+
 require 'rails/all'
 require "view_component/engine"
 
