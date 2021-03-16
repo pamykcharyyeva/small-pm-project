@@ -28,3 +28,14 @@ https://github.com/SortableJS/Sortable
 https://fontawesome.com/
 * Stimulus Reflex - to add reactiveness to rails application, to simply and seamlessly update with little code
 https://docs.stimulusreflex.com/
+
+
+
+
+DEPLOYED APP to Heroku:
+https://small-pm-app.herokuapp.com/
+
+- to deploy app to heroku (cause it uses cable/actioncable), gems use:
+
+* gem "redis", ">= 4.0", :require => ["redis", "redis/connection/hiredis"]
+* gem "hiredis"

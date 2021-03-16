@@ -1,7 +1,9 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-
+# code to use to push live(heroku). 
+# key- databese key in databese.yml
+# make sure to run heroku addons:create heroku-redis:hobby-dev --app small-pm-app
   config.cache_store = :redis_cache_store, {driver: :hiredis, url: ENV.fetch("REDIS_URL")}
 
   config.session_store :redis_session_store, {
