@@ -35,7 +35,7 @@ https://docs.stimulusreflex.com/
 DEPLOYED APP to Heroku:
 https://small-pm-app.herokuapp.com/
 
-- to deploy app to heroku (cause it uses cable/actioncable), gems use:
+ to deploy app to heroku (cause it uses cable/actioncable), gems use:
 
 * gem "redis", ">= 4.0", :require => ["redis", "redis/connection/hiredis"]
 * gem "hiredis"
