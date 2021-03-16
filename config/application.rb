@@ -2,10 +2,10 @@ require_relative 'boot'
 
 require 'rails/all'
 require "view_component/engine"
-
+require "rails_12factor"
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
-# Bundler.require(*Rails.groups)
+Bundler.require(*Rails.groups)
 
 module SmallPm
   class Application < Rails::Application
