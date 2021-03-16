@@ -247,7 +247,7 @@ DEPENDENCIES
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3 (~> 1.4)
+  sqlite3 (~> 1.4.2)
   stimulus_reflex (~> 3.4)
   turbolinks (~> 5)
   tzinfo-data
