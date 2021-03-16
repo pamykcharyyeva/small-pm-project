@@ -62,11 +62,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "stimulus_reflex", "~> 3.4"
 
-group: development do
+group :development do
   gem 'sqlite3'
 end
 
-group: production do
+group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
