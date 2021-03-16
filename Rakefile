@@ -5,8 +5,3 @@ require_relative 'config/application'
 
 Rails.application.load_tasks
 
-task default: %w[test]
-
-task :test do
-  ruby "test/unittest.rb"
-end
