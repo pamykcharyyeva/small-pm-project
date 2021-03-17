@@ -1,10 +1,11 @@
 
-Simple Project Management tool 
-Projects CRUD 
-Tasks CRUD 
-Tasks are nested within Project- nested_scaffold
-with login authentication - devise
-drag and drop - sortablejs
+# Simple Project Management tool 
+
+- Projects CRUD 
+- Tasks CRUD 
+- Tasks are nested within Project- nested_scaffold
+- with login authentication - devise
+- drag and drop - sortablejs
 
 
 Gems that were used:
@@ -13,8 +14,7 @@ Gems that were used:
 https://github.com/heartcombo/devise
 * gem 'nested_scaffold' - to create nested and make our life easier
 https://github.com/henrydjacob/rails-nested-scaffold
-* gem 'view_component" - Github's view_component - A framework for building reusable, testable & encapsulated view components in Ruby on Rails.
-https://github.com/github/view_component
+
 
 
 
@@ -30,12 +30,13 @@ https://fontawesome.com/
 https://docs.stimulusreflex.com/
 
 
+ Installed gems below before deploying to Heroku:
 
+* gem 'redis', '~> 4.0'
 
-DEPLOYED APP to Heroku:
+* gem "hiredis", "~> 0.6.3"
+
+* gem "redis-session-store", "~> 0.11.3"
+
+# Link to Heroku app:
 https://small-pm-app.herokuapp.com/
-
- to deploy app to heroku (cause it uses cable/actioncable), gems use:
-
-* gem "redis", ">= 4.0", :require => ["redis", "redis/connection/hiredis"]
-* gem "hiredis"
