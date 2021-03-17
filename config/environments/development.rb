@@ -26,7 +26,7 @@ Rails.application.configure do
     #   'Cache-Control' => "public, max-age=#{2.days.to_i}"
     # }
     # changed obove to below one, due to reason to uploud this app live to heroku
-    config.cache_store = :redis_cache_store, {driver: :hiredis, url: ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" }}
+    config.cache_store = :redis_cache_store, {driver: :hiredis, url: ENV.fetch("HEROKU_REDIS_GREY_URL") { "redis://localhost:6379/1" }}
   else
     config.action_controller.perform_caching = false
 
