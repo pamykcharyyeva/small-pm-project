@@ -4,7 +4,7 @@ Rails.application.configure do
 # code to use to push live(heroku). 
 # key- databese key in databese.yml
 # make sure to run heroku addons:create heroku-redis:hobby-dev --app small-pm-app
-  config.cache_store = :redis_cache_store, {driver: :hiredis, url: ENV.fetch("HEROKU_REDIS_GRAY_URL")}
+  config.cache_store = :redis_cache_store, {driver: :hiredis, url: ENV.fetch("REDIS_URL")}
 
   config.session_store :redis_session_store, {
     key: "small_pm_development",
