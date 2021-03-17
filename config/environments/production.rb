@@ -14,7 +14,7 @@ Rails.application.configure do
       expire_after: 1.year,
       ttl: 1.year,
       key_prefix: "app:session:",
-      url: ENV.fetch("HEROKU_REDIS_GRAY_TLS_UR")
+      url: ENV.fetch("HEROKU_REDIS_GRAY_TLS_URL")
     }
   }
 
