@@ -12,9 +12,9 @@ Rails.application.configure do
     redis: {
       driver: :hiredis,
       expire_after: 1.year,
-      ttl: 1.year,
-      key_prefix: "app:session:",
-      url: ENV.fetch("HEROKU_REDIS_URL")
+      ttl: 1.year
+      
+      
     }
   }
 

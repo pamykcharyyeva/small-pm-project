@@ -34,8 +34,11 @@ gem 'nested_scaffold'
 gem "view_component"
 gem 'pry-rails'
 
-gem "redis", ">= 4.0", :require => ["redis", "redis/connection/hiredis"]
-gem "hiredis"
+gem 'redis', '~> 4.0'
+
+gem "hiredis", "~> 0.6.3"
+
+gem "redis-session-store", "~> 0.11.3"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
