@@ -17,7 +17,6 @@ https://github.com/henrydjacob/rails-nested-scaffold
 
 
 
-
 Other :
 * Bootstrap CDN - for css and design
 https://www.bootstrapcdn.com/
@@ -30,13 +29,11 @@ https://fontawesome.com/
 https://docs.stimulusreflex.com/
 
 
- Installed gems below before deploying to Heroku:
-
+Cookie-based session storage is not currently supported by StimulusReflex. so I used Redis gems for that:
 * gem 'redis', '~> 4.0'
-
 * gem "hiredis", "~> 0.6.3"
-
 * gem "redis-session-store", "~> 0.11.3"
+
 
 # Link to Heroku app:
 https://small-pm-app.herokuapp.com/

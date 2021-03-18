@@ -18,8 +18,10 @@ export default class extends ApplicationController {
     })
     //  
     element.dataset.tasks = JSON.stringify(tasks)
-    // triger stimulate reflex, its look through tasks reflex (inside tasks folder)
+    // triger stimulate reflex, its look through tasks reflex (inside tasks file inside relex folder)
     this.stimulate('TasksReflex#sort', element)
   }
+
+
 
 }
