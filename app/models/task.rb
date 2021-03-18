@@ -3,6 +3,7 @@ class Task < ApplicationRecord
 
   validates :status, inclusion: { in: ['not-started', 'in-progress', 'complete'] }
 
+  # define const with argument that front end will take 
   STATUS_OPTIONS = [
     ['Not Started', 'not-started'],
     ['In Progress', 'in-progress'],

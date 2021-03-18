@@ -21,8 +21,9 @@ import "../stylesheets/application.scss"
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 document.addEventListener('turbolinks:load', () => {
-    // check to make sure libray is loaded
+    // check to make sure library is loaded
     // console.log("Sortable:", Sortable);
+    // get element that we gave id inside project show view page 'tasks-list'
     var el = document.getElementById('tasks-list');
     var sortable = Sortable.create(el, { animation: 150 });
 })

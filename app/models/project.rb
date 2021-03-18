@@ -20,9 +20,12 @@ class Project < ApplicationRecord
   # if everything is finished = completed
 
   def status
+    # if non of tasks started, then return not started
     return 'not-started' if tasks.none?
+    # if all complete then say 'complete'
     if tasks.all? { |task| task.complete? }
       'complete'
+      # in progress if anything in progress or complete
     elsif tasks.any? { |task| task.in_progress? || task.complete? }
       'in-progress'
     else
@@ -31,7 +34,7 @@ class Project < ApplicationRecord
   end
 
   #  method for percent complete
-# take total completed tasks to a float and devise by tasks and multiply by 100 and round that up
+# take total completed tasks to a float and devide by tasks and multiply by 100 and round that up
   def percent_complete
     # return 0 if there is no tasks
     return 0 if tasks.none?
